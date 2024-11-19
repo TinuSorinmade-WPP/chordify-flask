@@ -1,0 +1,9 @@
+googleapi.json 
+spotify-keys.json
+token.pickle
+Details.json
+client_secret.json
+.cache-*
+venv/
+__pycache__/
+.ipynb_checkpoints/

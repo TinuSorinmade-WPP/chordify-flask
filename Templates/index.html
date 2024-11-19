@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Chord Progression Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" alt="Spotify Logo" class="spotify-logo">
+    <h1>CHORDIFY</h1>
+</header>
+<div class="container">
+    <div class="search-form">
+        <form action="/" method="POST">
+            <label for="Chord">Chord Progression:</label><br>
+            <input type="text" id="Chord" name="Chord" value="{{ input }}" placeholder="e.g., '4,1'" required><br><br>
+
+            <label for="Page">Number of Pages to Fetch:</label><br>
+            <input type="number" id="Page" name="Page" value="{{ page }}" min="1" required><br><br>
+
+            <label for="instrument">Instrument of Choice:</label><br>
+            <input type="text" id="instrument" name="instrument" value="{{ instrument }}" placeholder="e.g., Piano, Guitar" required><br><br>
+
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <div class="playlists">
+        <section class="playlist">
+            <h2>Spotify Playlist:</h2>
+            <p>Playlist ID: {{ playlist_id }}</p> 
+            <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/playlist/{{ playlist_id if playlist_id else '37i9dQZF1DXcBWIGoYBM5M' }}?utm_source=generator" 
+                    width="100%" height="352" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy"></iframe>
+        </section>
+
+
+        
+        <section class="youtube-playlist">
+            <h2>YouTube Playlist:</h2>
+            <p>Playlist ID: {{ youtube_playlist_id }}</p> 
+            <iframe width="100%" height="352" 
+                    src="https://www.youtube.com/embed/?listType=playlist&list={{ youtube_playlist_id if youtube_playlist_id else 'PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI' }}" 
+                    frameborder="0" 
+                    allowfullscreen 
+                    loading="lazy"></iframe>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,162 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1DB954;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spotify-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-form {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    width: 100%;
+    text-align: left;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #1DB954;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1ed760;
+}
+
+.playlists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.playlist, .youtube-playlist {
+    flex: 1;
+    max-width: 500px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.playlist iframe, .youtube-playlist iframe {
+    border-radius: 12px;
+    width: 100%;
+    height: 352px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #1DB954;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    margin-top: auto;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .playlists {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
