@@ -13,7 +13,7 @@
 
 **Example Output:** 
 
-![Image](C:\Users\Tinu\CTA_CC1\CTA Lessons\Class_11\Output.png)
+![Output](C:\Users\Tinu\CTA_CC1\CTA Lessons\Class_11\Output.png)
 
 
 
