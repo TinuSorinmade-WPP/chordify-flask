@@ -11,6 +11,12 @@
 3. **YouTube Integration**: Generate a YouTube playlist of tutorials based on the chord progression and instrument.
 4. **Customisable Search**: Specify the number of result pages to fetch and choose a preferred instrument.
 
+
+
+**Example Output:** 
+
+![Screenshot 2024-11-19 202516](C:\Users\Tinu\Pictures\Screenshots\Screenshot 2024-11-19 202516.png)
+
 ------
 
 ## Prerequisites
