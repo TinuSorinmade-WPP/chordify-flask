@@ -15,7 +15,9 @@
 
 **Example Output:** 
 
-![Screenshot 2024-11-19 202516](C:\Users\Tinu\Pictures\Screenshots\Screenshot 2024-11-19 202516.png)
+![Output](C:/Users/Tinu/CTA_CC1/CTA Lessons/Class_11/Output.png)
+
+
 
 ------
 
